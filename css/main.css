@@ -1,5 +1,53 @@
-.icon {
-	width:200px;
-	padding:20px;
-	align:center;
+body {
+	font-family: arial;
+	background: #9d4ad3;
+}
+
+#containerBig {
+	margin-left: auto; 
+	margin-right: auto;
+	border: 1px solid #92929;
+	width: 1000px;
+	background-color: #efefef;
+}
+
+#container {
+	margin-left: auto; 
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
+	padding-bottom: 75px;
+	padding-top: 75px;
+}
+
+img { 
+	width: 150px;
+	padding: 20px;
+	 }
+
+img:hover {
+   	-webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+
+h1 {
+	text-align: center;
+	padding: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 24px;
+	color: orange;
+}
+
+#caption {
+	padding-left:80px;
+	padding-right: 80px;
+	padding-bottom: 75px;
+	font-size:18px;
 }
