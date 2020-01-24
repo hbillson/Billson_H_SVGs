@@ -1,16 +1,15 @@
 (() => {
-  console.log('hello from JS!');
-
-  let allIMGs = document.querySelectorAll("img"),
-  allSVGs = document.querySelectorAll("svg");
+  let allIMGs = document.querySelectorAll("img");
 
   function logSVG() {
     console.log(this.id);
   }
 
-  allIMGs.forEach(item => item.addEventListener("click", logSVG));
-  allSVGs.forEach(item => item.addEventListener("click", logSVG));
+  function toggleSelected() {
+    this.classList.toggle('selected');
+  }
 
-// document.querySelector('h1').textContent = "What is up? I am script";
+  allIMGs.forEach(item => item.addEventListener("click", logSVG));
+  allIMGs.forEach(item => item.addEventListener("click", toggleSelected));
 })();
 

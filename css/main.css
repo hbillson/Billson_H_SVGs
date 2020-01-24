@@ -24,6 +24,10 @@ body {
 	padding-top: 75px;
 }
 
+.selected{
+	transform: rotate(20deg);
+}
+
 img, svg { 
 	cursor: pointer;
 	width: 150px;
@@ -35,6 +39,7 @@ img:hover, svg:hover {
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
+
 
 
 h1 {
